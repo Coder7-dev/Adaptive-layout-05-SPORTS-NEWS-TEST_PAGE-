@@ -1,0 +1,36 @@
+.coaches {
+    padding: 3.75em 0;
+
+    @media (max-width: 64em) {
+        padding: 3em 0;
+    }
+    @media (max-width: 48em) {
+        padding: 2.5em 0;
+    }
+    @media (max-width: 20em) {
+        padding: 1.875em;
+    }
+}
+
+.coaches__row {
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: 90em) {
+        flex-wrap: wrap;
+        justify-content: center;
+        row-gap: 4em;
+        column-gap: 7.625em;
+    }
+    @media (max-width: 48em) {
+        row-gap: 2.5em;
+        column-gap: 5.625em;
+    }
+    @media (max-width: 20em) {
+        .card-coach:nth-child(2),
+        .card-coach:nth-child(3),
+        .card-coach:nth-child(4) {
+            display: none;
+        }
+    }
+}

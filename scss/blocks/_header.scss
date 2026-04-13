@@ -1,0 +1,79 @@
+.header {
+    position: relative;
+    min-height: 32.5em; 
+
+    background: url('./../img/full-width-photographs/top-1920.jpg') no-repeat top center; 
+    background-size: cover;
+    
+    @media (max-width: 48em) {
+        min-height: 32.5em;
+        background: url('./../img/full-width-photographs/top-768.jpg') no-repeat top center; 
+    }
+    @media (max-width: 20em) {
+        min-height: 12.8125em;
+        background: url('./../img/full-width-photographs/top-320.jpg') no-repeat top center; 
+    }
+} 
+
+.header__logo-nav {
+    position: absolute;
+    z-index: 1;
+    top: 1.875em;
+    left: 15.625%;
+    width: 69.79166666666667%;
+
+    @media (max-width: 48em) {
+        left: 1.30208333333333%;
+        width: 97.39583333333333%;
+    }
+    @media (max-width: 20em) {
+        left: 4.6875%;
+        width: 90.625%;
+    }
+}
+
+.header__wrapper {
+    position: absolute;
+    z-index: 1;
+    top: 15.5625em;
+    left: 33.33333333333333%;
+    align-items: center;
+
+    span {
+        display: inline-block;
+        font-size: 0.75em;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        margin-bottom: 1.166666666666667em; /* 14px / 12px */
+
+        @media (max-width: 20em) {
+            margin-bottom: 0.8333333333333333em; /* 10px / 12px */
+        }
+    }
+    h1 {
+        font-size: 2.5em;
+        font-weight: 700;
+        line-height: 1.125;
+    }
+    @media (max-width: 80em) {
+        width: 43.33333333333333%;    
+    }
+    @media (max-width: 64em) {
+        left: 28.33333333333333%;
+        width: 50.33333333333333%;    
+    }
+    @media (max-width: 48em) {
+        left: 12.63020833333333%;
+        width: 74.73958333333333%;
+    }
+    @media (max-width: 20em) {
+        top: 5.75em;
+        left: 4.6875%;
+        width: 90.625%;
+
+        & h1 {
+            font-size: 1.25em;
+            line-height: normal;
+        }
+    }
+}

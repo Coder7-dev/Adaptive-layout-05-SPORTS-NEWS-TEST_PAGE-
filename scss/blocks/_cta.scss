@@ -1,0 +1,146 @@
+.cta {
+    padding: 3.75em 0; 
+
+    @media (max-width: 64em) {
+        padding: 3em 0;
+    }
+    @media (max-width: 48em) {
+        padding: 2.5em 1.171875%;                
+    }
+    @media (max-width: 20em) {
+        padding: 1.875em 0 3.125em;
+    }
+}
+
+.cta__row {
+    display: flex;
+    gap: 2.5em;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+
+    @media (max-width: 48em) {
+        flex-wrap: nowrap;
+        gap: 1.25em;
+    }
+    @media (max-width: 20em) {
+        width: 100%;
+        gap: 1.875em;
+        flex-wrap: wrap;
+    }
+}
+
+.cta__socials {
+    width: 42.5em;
+
+    @media (max-width: 1431px) {
+        width: 68.75%;
+    }
+    @media (max-width: 20em) {
+        width: 100%;
+    }
+}
+
+.cta__subtitle {
+    display: inline-block;
+    font-size: 1.125em;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: $black;
+    margin-bottom: 1.333333333333333em;
+
+    @media (max-width: 20em) {
+        margin: 0 0 0.7777777777777778em 0.8611111111111111em;
+    }
+}
+
+.cta__wrapper-socials {
+    display: flex;
+    width: 100%;
+    min-height: 11.25em;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 0.125em;    
+    background-color: $red;
+
+    & .list-socials {
+        @media (max-width: 48em) {
+            gap: 0.75em;
+        }
+    }
+    & li:nth-child(5) {
+        @media (max-width: 20em) {
+            display: none;
+        }
+    }
+}
+
+.cta__subscription {
+    width: 42.5em;
+
+    @media (max-width: 1431px) {
+        width: 68.75%;
+    }
+    @media (max-width: 48em) {
+        width: 14.0625em;
+    }
+    @media (max-width: 20em) {
+        width: 100%;
+    }
+}
+
+.cta__wrapper-subscription {
+    display: flex;
+    width: 100%;
+    min-height: 11.25em;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 0.125em;
+    background-color: $black;
+}
+
+.cta__form {
+    display: flex;
+    width: 37.5em;
+    justify-content: center;
+    gap: 3.33333333333333%;
+
+    @media (max-width: 48em) {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5em;
+    }
+}
+
+.cta__input-wrapper {
+    display: inline-block;
+    width: 63.16666666666667%;
+    /*border-bottom: 1px solid rgba(255, 255, 255, 0.3);  Белый с 30% прозрачностью */ 
+    outline: none;                                       
+    background-color: $black; 
+
+    @media (max-width: 48em) {
+        width: 12.5em;
+    }
+}
+
+.cta__input {
+    width: 100%;
+    height: 1.75em;
+    padding-bottom: 0.75em;
+    border-bottom: 1px solid rgba($white, 0.3); 
+    outline: none;                                       
+}
+
+.cta__input::placeholder {
+    font-size: 0.875em;
+    font-weight: 300;
+    letter-spacing: 0.02em;
+    color: $white;
+}
+
+.cta__button {
+    background-color: $red;
+}

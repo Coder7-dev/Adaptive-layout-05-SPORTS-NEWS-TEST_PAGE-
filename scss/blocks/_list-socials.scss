@@ -1,0 +1,20 @@
+.list-socials {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5em;
+    pointer-events: auto;
+
+    @media (max-width: 20em) {
+        width: 71.25%;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        justify-content: center;
+        gap: 0.75em;
+    }
+}
+.list-socials__item {
+    @media (min-width: 48.0625em) and (max-width: 64.6875em) {
+        min-width: 30px;
+        min-height: 30px;
+    }
+}

@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Roboto+Flex:opsz,wght,XOPQ,XTRA,YOPQ,YTDE,YTFI,YTLC,YTUC@8..144,100..1000,96,468,79,-203,738,514,712&display=swap");
+
+body {
+    font-family: $font-main;
+    background-color: $white;
+    font-size: 100%;
+    font-weight: 400;
+    color: $white;
+}
+
+#container-main {
+    max-width: 120em; 
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.darkening-gradient {
+    position: relative;
+
+    &::after {
+        position: absolute;
+        content: "";
+        top: 0;right: 0;bottom: 0;left: 0;
+        background: 
+            linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), /* Слой 50% затемнения */
+            linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 6%, rgba(0, 0, 0, 0) 22%), /* Градиент верхний */
+            linear-gradient(to bottom, rgba(0, 0, 0, 0) 47%, rgba(0, 0, 0, 0.4) 100%); /* Градиент нижний */
+    }
+}
+
+a {
+    color: $white;
+
+    &:hover {
+        color: rgba($white, 0.7);
+        transition: color .2s ease-in;
+        cursor: pointer;
+        text-decoration: underline; 
+        text-underline-offset: 4px; /* смещение линии вниз */
+    }
+}
+
+.overflow-hidden {
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+
+.none {
+    display: none !important;
+}
+
+.container-small {
+    width: 68.75%;  
+    margin: 0 auto;
+
+    @media (max-width: 48em) {
+        width: 97.65625%;
+    }
+    @media (max-width: 20em) {
+        width: 100%;
+    }
+}
+
