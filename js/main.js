@@ -74,3 +74,37 @@ $(document).ready(function(){
         prevImage.addClass('current');
     });
 });
+
+/* SLIDER BUTTONS */
+
+$(document).ready(function(){
+  if ($(window).width() > 390) {
+    $('.prev a').text('< <');
+      $('.next a').text('> >');
+  } else {
+    $('.prev a').text('<');
+    $('.next a').text('>');
+  }
+
+  $(window).on('resize', function() {
+    if ($(window).width() > 390) {
+      $('.prev a').text('< <');
+      $('.next a').text('> >');
+    } else {
+      $('.prev a').text('<');
+      $('.next a').text('>');
+    } 
+  })
+});
+
+/* SLIDER BUTTONS */
+
+  $(window).on('resize', function() {
+      let width = $(window).width();
+
+      if (width <= 576) {
+          $('.card__info_blackout .card__hashtag').text('#Проф_спорт');
+      } else {
+        $('.card__info_blackout .card__hashtag').text('#Профессиональный_спорт');
+      }
+  }).trigger('resize');
