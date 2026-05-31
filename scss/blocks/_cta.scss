@@ -4,8 +4,14 @@
     @media (max-width: 64em) {
         padding: 3em 0;
     }
-    @media (max-width: 48em) {
+    @media (width: 48em) {
         padding: 2.5em 1.171875%;                
+    }
+    @media (max-width: 47.9375em) {
+        padding: 2.5em 0;                
+    }
+    @media (max-width: 24.375em) {     /* 390 */
+        padding: 2.5em 0;
     }
     @media (max-width: 20em) {
         padding: 1.875em 0 3.125em;
@@ -23,6 +29,13 @@
         flex-wrap: nowrap;
         gap: 1.25em;
     }
+    @media (max-width: 36em) {      /* 576 */
+        flex-wrap: wrap;
+        gap: 2.5em;
+    }
+    @media (max-width: 24.375em) {     /* 390 */
+        width: 100%;
+    }
     @media (max-width: 20em) {
         width: 100%;
         gap: 1.875em;
@@ -33,10 +46,10 @@
 .cta__socials {
     width: 42.5em;
 
-    @media (max-width: 1431px) {
+    @media (max-width: 89.4375em) {
         width: 68.75%;
     }
-    @media (max-width: 20em) {
+    @media (max-width: 36em) {
         width: 100%;
     }
 }
@@ -49,6 +62,13 @@
     color: $black;
     margin-bottom: 1.333333333333333em;
 
+    @media (max-width: 36em) {      /* 576 */
+        margin: 0 0 2em 2.5em;
+    }
+
+    @media (max-width: 24.375em) {     /* 390 */
+        margin: 0 0 0.9777777778em 1.4611111111em;
+    }
     @media (max-width: 20em) {
         margin: 0 0 0.7777777777777778em 0.8611111111111111em;
     }
@@ -68,6 +88,11 @@
         @media (max-width: 48em) {
             gap: 0.75em;
         }
+        @media (max-width: 36em) {      /* 576 */
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
     }
     & li:nth-child(5) {
         @media (max-width: 20em) {
@@ -79,13 +104,13 @@
 .cta__subscription {
     width: 42.5em;
 
-    @media (max-width: 1431px) {
+    @media (max-width: 89.4375em) {
         width: 68.75%;
     }
     @media (max-width: 48em) {
         width: 14.0625em;
     }
-    @media (max-width: 20em) {
+    @media (max-width: 36em) {
         width: 100%;
     }
 }
@@ -117,7 +142,6 @@
 .cta__input-wrapper {
     display: inline-block;
     width: 63.16666666666667%;
-    /*border-bottom: 1px solid rgba(255, 255, 255, 0.3);  Белый с 30% прозрачностью */ 
     outline: none;                                       
     background-color: $black; 
 

@@ -19,6 +19,15 @@
         @media (max-width: 48em) {
             margin-bottom: 0.3888888888888889em;
         }
+        @media (max-width: 28.125em) {      /* 450 */
+            font-size: 1.6em;
+        }
+        @media (max-width: 24.375em) {     /* 390 */
+            font-size: 1.5em;
+        }
+        @media (max-width: 23.5em) {      /* 376 */       
+            font-size: 1.5em;
+        }
         @media (max-width: 20em) {
             font-size: 1.25em;
             line-height: normal;
@@ -36,6 +45,12 @@
             font-size: 1em;
             letter-spacing: normal;
         }
+        @media (max-width: 24.375em) {     /* 390 */
+            font-size: 1.05em;
+        }
+        @media (max-width: 22.5em) {      /* 360 */
+            font-size: 0.975em;
+        }
         @media (max-width:  20em) {
             font-size: 0.875em;
             line-height: 1.285714285714286;
@@ -49,6 +64,11 @@
         top: 41.30434782608696%;
         left: 19.140625%;
         width: 42.71875%;
+    }
+    @media (max-width: 24.375em) {     /* 390 */
+        top: 6.1875em;
+        left: 8.75%;
+        width: 82.5%;
     }
     @media (max-width: 20em) {
         top: 6.1875em;
@@ -136,44 +156,32 @@
     }
 } 
 
+.prev a,
+.next a {
+    display: block;
+    text-decoration: none;
+    opacity: 0.5;
+}
+
 .prev {
     position: absolute; 
-    z-index: 10;
     top: 50%;
     transform: translateY(-50%);
     left: 1.5%;
     width: 10%;
     height: 10%;
-    
-    & a {
-        text-decoration: none;
-
-        @media (max-width: 20em) {
-            color: $red;
-        }
-    }
 }
 
 .next {
     position: absolute; 
-    z-index: 10;
     top: 50%;
     transform: translateY(-50%);
     right: 1.5%;
     width: 10%;
     height: 10%;
     text-align: right;
-    
-    & a {
-        text-decoration: none;
-
-        @media (max-width: 20em) {
-            color: $red;
-            filter: grayscale(20%);
-        }
-    }
 }
 
-.n {
+.color {
     color: $white;
 }

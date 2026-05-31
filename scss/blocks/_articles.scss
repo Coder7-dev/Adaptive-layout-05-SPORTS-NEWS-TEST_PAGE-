@@ -24,18 +24,24 @@
     }
     @media (max-width: 64em) {
         grid-template-rows: 32.4925em;
-        column-gap: 1.875em; /*30px*/
+        gap: 2.5em 1.875em; /* 40px 30px*/
     }
     @media (max-width: 48em) {
         grid-template-rows: 30em;
+    }
+    @media (max-width: 36em) {      /* 576 */
+        grid-template-columns: 1fr;
+        /* gap: 1.5em 1em; */        
+    }
+    @media (max-width: 28.125em) {     /* 450 */    
+        grid-template-rows: 27.199875em;
     }
     @media (max-width: 20em) {
         grid-template-columns: 1fr;
         grid-template-rows: none;
         gap: 1.875em;
 
-        .card:nth-child(1),
-        .card:nth-child(2) {
+        .card:nth-child(1) {
             display: none; 
         }
         .card-copy {

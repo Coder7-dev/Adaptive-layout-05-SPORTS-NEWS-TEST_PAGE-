@@ -7,6 +7,12 @@
     @media (max-width: 48em) {
         padding: 2.5em 0;
     }
+    @media (max-width: 23.5em) {      /* 376 */
+        padding: 2.2em 0;
+    }
+    @media (max-width: 22.5em) {      /* 360 */
+        padding: 2em 0;
+    }
     @media (max-width: 20em) {
         padding: 1.875em;
     }
@@ -22,9 +28,21 @@
         row-gap: 4em;
         column-gap: 7.625em;
     }
+    @media (max-width: 62em) {
+        column-gap: 4.625em;
+    }
     @media (max-width: 48em) {
         row-gap: 2.5em;
         column-gap: 5.625em;
+    }
+    @media (max-width: 24.375em) {     /* 576 */
+        row-gap: 2em;
+    }
+    @media (max-width: 23.4375em) {      /* 375 */
+        row-gap: 1.5em;
+    }
+    @media (max-width: 22.5em) {      /* 360 */
+        row-gap: 1em;
     }
     @media (max-width: 20em) {
         .card-coach:nth-child(2),

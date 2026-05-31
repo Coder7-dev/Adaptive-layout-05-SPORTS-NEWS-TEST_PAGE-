@@ -25,12 +25,22 @@
         font-size: 2.25em;
         font-weight: 700;
         line-height: 1.125;
-        
+
+        @media (max-width: 36em) {      /* 576 */
+            font-size: 1.6em;
+        }
+        @media (max-width: 24.375em) {     /* 390 */
+            font-size: 1.5em;
+        }
+        @media (max-width: 23.5em) {    /* 376 */
+            font-size: 1.3em;
+        }
         @media (max-width: 20em) {
             font-size: 1.25em;
             line-height: normal;
         }
     }
+
     @media (max-width: 80em) {
         top: 42.45522388059701%;
         width: 42.33333333333333%;
@@ -39,6 +49,14 @@
         top: 44.20289855072464%;
         left: 12.6953%;
         width: 74.73958333333333%;
+    }
+    @media (max-width: 36em) {
+        top: 50.20289855072464%;
+    }
+    @media (max-width: 24.375em) {     /* 390 */
+        top: 5.8125em;
+        left: 11.875%;
+        width: 76.875%;
     }
     @media (max-width: 20em) {
         top: 5.8125em;
