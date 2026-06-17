@@ -48,14 +48,16 @@
     @media (max-width: 24.375em) {     /* 390 */
         grid-template-rows: none;
     }
+
     @media (max-width: 20em) {
+        grid-template-rows: 23.125em 23.0625em 18.125em 23.125em;
         gap: 1.875em;
 
         .card-copy {
             display: block;
         }
         .card:nth-child(3) {
-            display: none;
+            display: none; 
         }
     }
 }

@@ -38,7 +38,7 @@
     }
     @media (max-width: 20em) {
         grid-template-columns: 1fr;
-        grid-template-rows: none;
+        grid-template-rows: 23.0625em 18.125em;
         gap: 1.875em;
 
         .card:nth-child(1) {
